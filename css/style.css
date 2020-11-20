@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  /* No exemplo abaixo o width foi definido com 300px e um padding de 60px, com o 'border-box' ele continua com 300px de width e não adiciona e nem subtrai, sempre com 300px */
+}
+
 body,
 h1,
 h2,
@@ -10,28 +15,41 @@ a {
 }
 body {
   font-family: "Nunito", Arial, Helvetica, sans-serif;
-  color: black;
+  color: #222222;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
-img{
+img {
   display: block;
   max-height: 100%;
   /* Não deixa passar de 100%,ou seja, ele acompanha a tela */
 }
 
-*{
-  box-sizing: border-box;
+/* Superinfo */
+.superinfo-bg{
+  background: #122ab2;
+  color: white
 }
 
-p{
-  width: 300px;
-  background: tomato;
-  padding: 0 60px;
+.superinf{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;  
+  justify-content: space-between;
+  /*Cria um espaçamento igual entre os elementos. Mantendo o primeiro grudado no início e o último no final.*/
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.superinf p, .superinf a {
+  margin: 0 10px 10px 10px;
+}
+.superinfo-bg a {
+  color: white;
 }
