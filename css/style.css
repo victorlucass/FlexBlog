@@ -10,8 +10,8 @@ p,
 ul,
 li,
 a {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 body {
   font-family: "Nunito", Arial, Helvetica, sans-serif;
@@ -32,22 +32,23 @@ img {
 }
 
 /* Superinfo */
-.superinfo-bg{
+.superinfo-bg {
   background: #122ab2;
-  color: white
+  color: white;
 }
 
-.superinf{
+.superinf {
   max-width: 960px;
   margin: 0 auto;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   /*Cria um espaçamento igual entre os elementos. Mantendo o primeiro grudado no início e o último no final.*/
   flex-wrap: wrap;
   padding-top: 10px;
 }
 
-.superinf p, .superinf a {
+.superinf p,
+.superinf a {
   margin: 0 10px 10px 10px;
 }
 .superinfo-bg a {
@@ -55,31 +56,31 @@ img {
 }
 
 /* Menu */
-.menu-bg{
+.menu-bg {
   background-color: #2c70ff;
 }
 
-.menu{
+.menu {
   max-width: 960px;
   margin: 0 auto;
   padding: 15px 0;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu a{
+.menu a {
   color: white;
 }
 
-.menu-logo a{
+.menu-logo a {
   font-size: 2.25em;
   font-weight: bold;
   margin: 0px 10px;
 }
 
-.menu-nav ul{
+.menu-nav ul {
   display: flex;
   flex-wrap: wrap; /* Ele serve para não deixa estourar o container*/
 }
@@ -94,12 +95,12 @@ img {
   border-radius: 10px;
   font-weight: 500;
   color: #122ab2;
-  
+
   transition: 0.5s all;
 }
 
 /* Introdução */
-.introducao{
+.introducao {
   font-size: 3em;
   line-height: 1;
   max-width: 960px;
@@ -108,7 +109,7 @@ img {
 }
 
 /* Sobre */
-.sobre{
+.sobre {
   border-top: 1px solid #122ab2;
   border-bottom: 1px solid #122ab2;
   max-width: 960px;
@@ -118,14 +119,14 @@ img {
   flex-wrap: wrap;
 }
 
-.sobre-info{
+.sobre-info {
   flex: 2 1 300px;
   margin: 0 10px;
 }
 
-.sobre-info h1{
+.sobre-info h1 {
   font-size: 3em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .sobre-info p {
@@ -135,10 +136,28 @@ img {
   columns: #7c7c7c;
 }
 
-.sobre-img{
-  flex: 1 1 160px; 
-  /* Rever com muuita atenção aula 3-6 */
+.sobre-img {
+  flex: 1 1 160px;
   margin: 0 10px;
 }
 
+/*Produtos*/
 
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.produtos h1 {
+  font-size: 3em;
+  margin: 0 10px 60px 10px;
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.produtos-item {
+  flex: 1 1 175px;
+}
