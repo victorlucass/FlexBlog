@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Container - Estudos</title>
+    <link rel="stylesheet" href="flex-container.css" />
+  </head>
+  <body>
+    <!-- Flex-Direction -->
+    <main section class="container-general">
+      <h1>Flex-Direction</h1>
+      <h1>|<br />v</h1>
+      <h1>Flex-Direction: <strong>row</strong></h1>
+      <section class="container fd-row">
+        <div class="item flex">Item 1</div>
+        <div class="item flex">1</div>
+        <div class="item flex">2</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+      </section>
+      <h1>Flex-Direction: <strong>row-reverse</strong></h1>
+      <section class="container fd-row-reverse">
+        <div class="item flex">Item 1</div>
+        <div class="item flex">1</div>
+        <div class="item flex">2</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+      </section>
+      <h1>Flex-Direction: <strong>column</strong></h1>
+      <section class="container fd-column">
+        <div class="item flex">Item 1</div>
+        <div class="item flex">1</div>
+        <div class="item flex">2</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+        <div class="item flex">3</div>
+      </section>
+      <h1>Flex-Direction: <strong>column-reverse</strong></h1>
+      <section class="container fd-column-reverse">
+        <div class="item flex">Item 1</div>
+        <div class="item flex">1</div>
+        <div class="item flex">2</div>
+        <div class="item flex">3</div>
+      </section>
+    </main>
+
+    <!-- Flex-Wrap -->
+    <main class="container-general">
+      <h1>Flex-Wrap</h1>
+      <h1>|<br />v</h1>
+      <h1>Flex-Wrap: <strong>nowrap</strong></h1>
+      <section class="container fw-nowrap">
+        <div class="item flex">TesteDoItem1</div>
+        <div class="item flex">TesteDoItem2</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+      </section>
+      <h1>Flex-Wrap: <strong>wrap</strong></h1>
+      <section class="container fw-wrap">
+        <div class="item flex">TesteDoItem1</div>
+        <div class="item flex">TesteDoItem2</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+      </section>
+      <h1>Flex-Wrap:<strong>wrap-reverse</strong></h1>
+      <section class="container fw-wrap-reverse">
+        <div class="item flex">TesteDoItem1</div>
+        <div class="item flex">TesteDoItem2</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+        <div class="item flex">TesteDoItem3</div>
+      </section>
+
+      <h1>Flex-Flow</h1>
+      <h1>|<br />v</h1>
+      <h1>
+        <strong>
+          <p>O Flex-Flow ele é um atalho entre Flex-Direction e Flex-Wrap!</p>
+        </strong>
+      </h1>
+      <section class="container">
+        <p>Ex: flex-flow: row(flex-direction) nowrap(flex-wrap);</p>
+      </section>
+      
+      <h1>Justify-Content</h1>
+      <h1>|<br />v</h1>
+      <h1><strong>(fd-row)</strong></h1>
+      <h1>Justify-Content: <strong>flex-start</strong></h1>
+      <section class="container jc-flex-start">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+      <h1>Justify-Content: <strong>flex-end</strong></h1>
+      <section class="container jc-flex-end">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+      <h1>Justify-Content: <strong>center</strong></h1>
+      <section class="container jc-center">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+      <h1>Justify-Content: <strong>space-between</strong></h1>
+      <section class="container jc-space-between">
+        <div class="item">logo</div>
+        <div class="item">menu</div>
+      </section>
+
+      <h1>Justify-Content: <strong>space-around</strong></h1>
+      <section class="container jc-space-around">
+        <div class="item">logo</div>
+        <div class="item">menu</div>
+      </section>
+      <h1><strong>(fd-column)</strong></h1>
+      <h1>Justify-Content: <strong>flex-start</strong></h1>
+      <section class="container jc-flex-start">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+      <h1>Justify-Content: <strong>flex-end</strong></h1>
+      <section class="container jc-flex-end">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+      <h1>Justify-Content: <strong>center</strong></h1>
+      <section class="container jc-center">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+      <h1>Justify-Content: <strong>space-between</strong></h1>
+      <section class="container jc-space-between">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+
+      <h1>Justify-Content: <strong>space-around</strong></h1>
+      <section class="container jc-space-around">
+        <div class="item">1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+      <h1><strong>OBS:</strong></h1>
+      <section class="container">
+        <p class="item"> 
+          Não será aplicado a proprieda caso tenha definido 'flex:1',ou seja, se os itens tiverem ocupando 100% do espaço
+        </p>
+    </main>
+  </body>
+</html>
