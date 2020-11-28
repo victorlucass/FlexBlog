@@ -142,7 +142,7 @@
       <section class="container">
         <p>Ex: flex-flow: row(flex-direction) nowrap(flex-wrap);</p>
       </section>
-      
+
       <h1>Justify-Content</h1>
       <h1>|<br />v</h1>
       <h1><strong>(fd-row)</strong></h1>
@@ -180,28 +180,28 @@
       </section>
       <h1><strong>(fd-column)</strong></h1>
       <h1>Justify-Content: <strong>flex-start</strong></h1>
-      <section class="container jc-flex-start">
+      <section class="container fd-column min-height jc-flex-start">
         <div class="item">1</div>
         <div class="item">Teste 2</div>
         <div class="item">3</div>
         <div class="item">4</div>
       </section>
       <h1>Justify-Content: <strong>flex-end</strong></h1>
-      <section class="container jc-flex-end">
+      <section class="container fd-column min-height jc-flex-end">
         <div class="item">1</div>
         <div class="item">Teste 2</div>
         <div class="item">3</div>
         <div class="item">4</div>
       </section>
       <h1>Justify-Content: <strong>center</strong></h1>
-      <section class="container jc-center">
+      <section class="container fd-column min-height jc-center">
         <div class="item">1</div>
         <div class="item">Teste 2</div>
         <div class="item">3</div>
         <div class="item">4</div>
       </section>
       <h1>Justify-Content: <strong>space-between</strong></h1>
-      <section class="container jc-space-between">
+      <section class="container fd-column min-height jc-space-between">
         <div class="item">1</div>
         <div class="item">Teste 2</div>
         <div class="item">3</div>
@@ -209,7 +209,7 @@
       </section>
 
       <h1>Justify-Content: <strong>space-around</strong></h1>
-      <section class="container jc-space-around">
+      <section class="container fd-column min-height jc-space-around">
         <div class="item">1</div>
         <div class="item">Teste 2</div>
         <div class="item">3</div>
@@ -217,9 +217,62 @@
       </section>
       <h1><strong>OBS:</strong></h1>
       <section class="container">
-        <p class="item"> 
-          Não será aplicado a proprieda caso tenha definido 'flex:1',ou seja, se os itens tiverem ocupando 100% do espaço
+        <p class="item">
+          Não será aplicado a proprieda caso tenha definido 'flex:1',ou seja, se
+          os itens tiverem ocupando 100% do espaço
         </p>
+      </section>
+      <h1>Align Items</h1>
+      <h1>|<br />v</h1>
+      <h1><strong>(fd-row)</strong></h1>
+      <h1>Align Items: <strong>Stretch</strong></h1>
+      <section class="container min-height fd-row it-stretch">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+      </section>
+
+      <h1>Align Items: <strong>Flex-start</strong></h1>
+      <section class="container min-height fd-row it-flex-start">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo go! go! go!</div>
+        <div class="item">Teste 4</div>
+      </section>
+      <h1>Align Items: <strong>Flex-end</strong></h1>
+      <section class="container min-height fd-row it-flex-end">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+      </section>
+      <h1>Align Items: <strong>Center</strong></h1>
+      <section class="container min-height fd-row it-center">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+      </section>
+      <h1>Align Items: <strong>Baseline</strong></h1>
+      <section class="container min-height fd-row it-baseline">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+      </section>
+      <h1>Align Content</h1>
+      <h1>|<br />V</h1>
+      <section class="container fw-wrap min-height ac-strect">
+        <div class="item flex">TestandoPalavra1</div>
+        <div class="item flex">Teste 2 do Item flex</div>
+        <div class="item flex">Teste 3 do Item flex Agora Mesmo</div>
+        <div class="item flex">Teste 4</div>
+        <div class="item flex">Teste 5</div>
+        <div class="item flex">Teste 6</div>
+        <div class="item flex">Teste 7</div>
+        <div class="item flex">Teste 8</div>
+      </section>
     </main>
   </body>
 </html>
