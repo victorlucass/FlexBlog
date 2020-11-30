@@ -1,0 +1,312 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: #222222;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Super Info*/
+
+.super-info-bg {
+    background: #122ab2;
+    color: white;
+}
+
+.super-info-bg a {
+    color: white;
+}
+
+.super-info {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding-top: 10px;
+}
+
+.super-info p,
+.super-info a {
+    margin: 0px 10px 10px 10px;
+    font-weight: 800;
+}
+
+/*Menu*/
+
+.menu-bg {
+    background: #2c70ff;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    /*Esse display block serve para poder mexer melhor no padding! Por padrão ele fica inline*/
+}
+
+.menu-nav a:hover {
+    color: #122ab2;
+}
+
+/*introdução e Sobre*/
+
+.introducao {
+    font-size: 3em;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+.sobre{
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.sobre-info{
+    flex: 2 1 300px;
+    /*Eu não sei muito bem sobre os flex, mas oq dá pra entender que o primeiro valor é grow, segundo shrink e basis, por padrão os valores de shrink e basis é respectivamente 1 e 1, mas se mudarmos o valor de basis, como por exemplo, 300px, ele que meio já vai quebrar, como se estiversimos usando o @Media*/
+    margin: 0 10px;
+}
+
+.sobre-info h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
+
+.sobre-img {
+    flex:1 1 160px;
+    /*Eu não sei muito bem sobre os flex, mas oq dá pra entender que o primeiro valor é grow, segundo shrink e basis, por padrão os valores de shrink e basis é respectivamente 1 e 1, mas se mudarmos o valor de basis, como por exemplo, 160px, ele que meio já vai quebrar, como se estiversimos usando o @Media*/
+    margin: 10px;
+}
+
+/*Produtos*/
+
+.produtos {
+    max-width:960px;
+    margin: 60px auto;
+}
+
+.produtos h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.produtos-item{
+    flex: 1 1 175px;
+    margin: 10px;
+}
+
+.produtos-item h2{
+    font-size: 3em;
+    color: #a4a4a4;
+    background: #f7f7f7;
+    padding: 60px 20px;
+}
+
+.purple{
+    border-top: 8px solid #ae81ff
+}
+
+.pink{
+    border-top: 8px solid #f9265e;
+}
+
+.blue {
+    border-top: 8px solid #66d9eb;
+    align-self: flex-end;
+}
+
+/*Preços*/
+
+.precos{
+    background: #f7f7f7;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.preco-item {
+    flex:1 1 260px;
+    border: 4px solid white;
+    padding: 20px;    
+    margin: 10px;
+}
+
+.preco-item h2 {
+    font-size: 3em;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preco-item span {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    border-top: 4px solid white; 
+    border-bottom:4px solid white;
+    font-size: 3em;
+}
+
+.preco-item sup{
+    font-size: 1.5rem;
+    /*Usando rem pois ele vai pegar como base o pai que é 3em ali em cima, já o rem pega como base a raiz, ou seja, 16px*/
+    
+}
+
+.preco-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.preco-item li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.preco-item li::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #2c70ff;
+    border-radius: 50%;   
+}
+
+.preco-item a {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid;
+    color: #222222;
+    text-align: center;
+    font-size: 2.25em;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.preco-item a:hover{
+    transition: 0.5s;
+    background: #2c70ff;
+    color: white;
+    font-size: 1.5em;
+}
+
+@media(max-width: 800px){
+    .precos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .precos .preco-item:nth-child(3){
+        order:-2; 
+    }
+    .precos .preco-item:nth-child(2){
+        order:-1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
