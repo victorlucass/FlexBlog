@@ -285,12 +285,143 @@ img {
     }
 }
 
+/*Qualidade*/
 
+.qualidade {
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-flow: row wrap;    
+}
 
+.qualidade-item {
+/*    background: black*/
+    flex: 1 1 300px;
+    margin: 20px 10px;
+}
 
+.qualidade-item h2 {
+    font-size: 2.25em;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+}
 
+.qualidade-item h2::before{
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    width: 8px;
+    height: 30px;
+/*    background: blue;*/
+}
 
+.qualidade-item:nth-of-type(3n+1) h2::before{
+    background: #ae81ff;
+}
+.qualidade-item:nth-of-type(3n+2) h2::before{
+    background: #f9265e;
+}
+.qualidade-item:nth-of-type(3n+3) h2::before{
+    background: #66d9eb;
+}
 
+/*A lógica é 3n+1, isso significa que o '1' é o primeiro item a ser selecionado, ou seja, tipo nth-of-type(1). Aí esse 3n ele vai pular o item '1' e vai no 3 item, isso até finalizar o número total de itens*/
+
+.qualidade-item p {
+    color: #7c7c7c;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+/*Newletter;*/
+.newsletter {
+    background:#f7f7f7;
+    margin: 0 auto;
+}
+
+.newsletter-info{
+    max-width: 960px;
+    padding: 60px 0 60px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+}
+
+.newsletter-text{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 260px;
+    margin-bottom: 10px;
+    color: #a4a4a4;
+/*    background: black*/
+}
+
+.newsletter-text h1 {
+    font-size: 3em;
+}
+
+.newsletter-text p {
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 2 1 260px;
+    margin: 10px 0px;
+    max-width: 50%;
+}
+
+.newsletter-form input {
+    flex: 3 1 200px;
+    font-size: 1.25em;
+    font-style: italic;
+    border: 4px solid #2c70ff;
+    background: transparent;
+    padding: 10px;
+    margin:0px;
+    border-radius: 0;
+    border-bottom: 3px solid #2c70ff;
+}
+
+.newsletter-form button {
+    flex: 1 1 200px;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #2c70ff;
+    color: white;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    padding: 4px 0px;
+}
+
+@media(max-width: 600px) {
+    .newsletter-form{
+        justify-content: center;
+         max-width: 100%;
+    }
+    .newsletter-info {
+/*        width: 100%;*/
+/*        border: 1px solid black;*/
+        justify-content: center;
+    }
+}
+
+.footer {
+    flex:1;
+    color: white;
+    background: #2c70ff;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 2.25em;
+    text-align: center;
+}
 
 
 
